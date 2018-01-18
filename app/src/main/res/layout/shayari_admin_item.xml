@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        app:contentPadding="8dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_admin_shayari"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".98"
+                android:layout_marginEnd="16dp"
+                tools:text="Some Random Shayari"/>
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.01"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_btn_approve_background"/>
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight=".01"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_btn_reject_background"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

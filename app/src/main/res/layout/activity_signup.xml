@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_parallax"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:parallaxOffsetBase="15dp"
+    app:parallaxOffsetIncrement="10dp"
+    tools:context="com.lilash.leelash.jhoonashayari.SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/edit_text"
+                android:drawableStart="@drawable/ic_user"
+                android:hint="@string/name"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/edit_text"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/et_signup_password"
+                style="@style/edit_text"
+                android:drawableStart="@drawable/ic_lock"
+                android:hint="@string/password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/et_dob"
+                style="@style/edit_text"
+                android:drawableStart="@drawable/ic_birthday"
+                android:hint="@string/date_of_birth"
+                android:imeOptions="actionNext"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_country"
+                style="@style/edit_text"
+                android:completionThreshold="1"
+                android:drawableStart="@drawable/ic_flag"
+                android:hint="@string/country"
+                android:imeOptions=""
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/edit_text"
+                android:drawableStart="@drawable/ic_mobile_number"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"/>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="32dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/signup"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout>

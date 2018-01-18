@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mi_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/mi_submit_shayari"
+        android:icon="@drawable/ic_submit_shayari"
+        android:title="@string/submit_shayari" />
+
+    <item
+        android:id="@+id/mi_status"
+        android:icon="@drawable/ic_status"
+        android:title="@string/status" />
+
+</menu>
