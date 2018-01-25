@@ -11,7 +11,6 @@
 
 
     <!-- Google Material design colors -->
-
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>
     <color name="md_red_100">#FFCDD2</color>
